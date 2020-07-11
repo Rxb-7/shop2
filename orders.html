@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
-    <title>Product</title>
+    <title>My Orders</title>
   </head>
   <body> 
     <div class="container-fluid bg-dark text-light">
@@ -161,134 +161,114 @@
           
 
       </div>
-      <div class="row-fluid d-flex">
-        <div class="col-12 col-md-6">
-            <div class="row">
-                <div class="col-3">
-                    <a class="d-inline-block m-1 p-1" data-fancybox="gallery" href=""><img class="img-fluid" src="img/Laptop.png"></a>
-                    <a class="d-inline-block m-1 p-1" data-fancybox="gallery" href=""><img class="img-fluid" src="img/Laptop.png"></a>
-                    <a class="d-inline-block m-1 p-1" data-fancybox="gallery" href=""><img class="img-fluid" src="img/Laptop.png"></a>
-                    <a class="d-inline-block m-1 p-1" data-fancybox="gallery" href=""><img class="img-fluid" src="img/Laptop.png"></a>
-                </div>
-                <div class="col">
-                    <a class="" data-fancybox="gallery" href="img/Laptop.png"><img class="img-fluid" src="img/Laptop.png"></a>
-                </div>
-            </div>
+      <!--body-->
+    <div class="container-fluid p-3">
+      <h2>Orders</h2>
+
+        <table class="table table-bordered">
+  
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Amount</th>
+                </tr>
+              </thead>
+          
+          
+            <tr>
+              <th scope="row-fluid">1</th>
+              <td class="d-flex"><img src="img/asuspc.png" width="50px" class="border d-none d-md-block "><a href="product.html" class=" text-dark ml-3">Asus PC</a></td>
+              <td>$1000</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td class="d-flex"><img src="img/Laptop.png" width="50px" class="border d-none d-md-block "><a href="product.html" class=" text-dark ml-3">Laptop</a></td>
+              <td>$500</td>
+              <td>1</td>
+            </tr>
+            
+          
+        </tbody></table>
+        <div class="col-12">
+           <div class="row p-1">
+  
+          <a type="button" class="btn btn-dark btn-lg ml-auto" href="payment.html">Check out</a>
+        
         </div>
-        <div class="col-12 col-md-6">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="font-weight-bold">$500</h3>
-                </div>
-            </div>
-            <form class="w-100 row" action="">
-                <div class="col-12 col-md-5">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">Quantity</span>
-                        </div>
-                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="1">
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <input class="btn btn-primary" type="submit" value="Add To Cart">
-                </div>
-            </form>
+        </div>
+      
+      <h2>Wishlist</h2>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Amount</th>
+                </tr>
+              </thead>
+          
+          
+            <tr>
+              <th scope="row">1</th>
+              <td class="d-flex"><img src="img/asuspc.png" width="50px" class="border d-none d-md-block "><a href="product.html" class=" text-dark ml-3">Asus PC</a></td>
+              <td>$1000</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td class="d-flex"><img src="img/Laptop.png" width="50px" class="border d-none d-md-block "><a href="product.html" class=" text-dark ml-3">Laptop</a></td>
+              <td>$500</td>
+              <td>1</td>
+            </tr>
+            
+          
+        </tbody></table>
+      </div>
+        <div class="row text-center d-flex justify-content-center m-2">
+        <div class="col-12 font-weight-bold"><h2>Recently Viewed</h2></div>   
+        <div class="col-12 col-md-auto p-1">
+          <div class="card" style="width: 18rem;">
+        <img src="https://www.nzxt.com/images/experimental-homepage/bld-pod.png" class="card-img-top" alt="..." height="280" width="250">
+        <div class="card-body">
+          <h4 class="card-title text-dark">NZXT PC</h4>
+          <a href="product.html" class="btn btn-dark p-1">View Product</a>
         </div>
       </div>
-        <div class="row-fluid mt-3 p-3 d-flex justify-content-center">
-            <div class="accordion col-12 col-md-10" id="accordionExample">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item" id="headingOne">
-                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Information</a>
-                    </li>
-                    <li class="nav-item" id="headingTwo">
-                        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Rating</a>
-                    </li>
-                </ul>
-                <div class="card">
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <p class="font-weight-bold">Specs</p>
-                            <ul>
-                                <li>CPU: Intel</li>
-                                <li>Battery Life: 10hrs</li>
-                                <li>Insurance: Included</li>
-                            </ul>
-                            HP NoteBook is a Windows 10 laptop with a 15.60-inch display that has a resolution of 1366x768 pixels. It is powered by a Core i5 processor and it comes with 8GB of RAM. The HP NoteBook packs 256GB of SSD storage. Graphics are powered by Intel HD Graphics 620. 
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body">
-                            <span class="w-25">Effiecency</span>
-                            <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <span class="w-25">Gaming</span>
-                            <div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="col-12 col-md-auto p-1">
+          <div class="card" style="width: 18rem;">
+        <img src="https://www.asus.com/EVENT/30th-anniversary/30-years-together/stories/07aa41ed579647dc8ab7176b68afd2f6.jpg" class="card-img-top" alt="..." height="280" width="250">
+        <div class="card-body">
+          <h4 class="card-title text-dark">Asus PC</h4>
+          <a href="product.html" class="btn btn-dark p-1">View Product</a>
         </div>
+      </div>
+      </div>
+      <div class="col-12 col-md-auto p-1">
+          <div class="card" style="width: 18rem;">
+        <img src="https://cdn.alzashop.com/ImgW.ashx?fd=f3&cd=CC021o1d" class="card-img-top" alt="..." height="280" width="250">
+        <div class="card-body">
+          <h4 class="card-title text-dark">Cooler Master Pc</h4>
+          <a href="product.html" class="btn btn-dark p-1">View Product</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-12 col-md-auto p-1">
+          <div class="card" style="width: 18rem;">
+        <img src="https://static.bhphoto.com/images/images2000x2000/1588869980_1560599.jpg" class="card-img-top" alt="..." height="280" width="250">
+        <div class="card-body">
+          <h4 class="card-title text-dark">Razer PC </h4>
+          <a href="product.html" class="btn btn-dark p-1">View Product</a>
+        </div>
+      </div>
+      </div>
     </div>
-    <div class="container-fluid bg-light">
-            <div class="row text-center d-flex justify-content-center p-5">
-                <div class="col-12 font-weight-bold"><h2>New Arrivals</h2></div>   
-                    <div class="col-12 col-md-auto p-1">
-                        <div class="card" style="width: 18rem;">
-                            <img src="https://www.nzxt.com/images/experimental-homepage/bld-pod.png" class="card-img-top" alt="..." height="280" width="250">
-                            <div class="card-body">
-                            <h4 class="card-title text-dark">NZXT PC</h4>
-                            <p class="card-text text-danger font-bold"><strike>$700</strike></p>
-                            <p class="card-text text-priamry font-italic">$500</p>
-                            <a href="#" class="btn btn-dark p-1">View Product</a>
-                            <a href="#" class="btn btn-primary p-1">Compare</a>
-                            </div>
-                        </div>
-                    </div>
-            <div class="col-12 col-md-auto p-1">
-                <div class="card" style="width: 18rem;">
-                <img src="https://www.asus.com/EVENT/30th-anniversary/30-years-together/stories/07aa41ed579647dc8ab7176b68afd2f6.jpg" class="card-img-top" alt="..." height="280" width="250">
-                <div class="card-body">
-                <h4 class="card-title text-dark">Asus PC</h4>
-                <p class="card-text text-danger font-bold"><strike>$700</strike></p>
-                <p class="card-text text-priamry font-italic">$500</p>
-                <a href="#" class="btn btn-dark p-1">View Product</a>
-                <a href="#" class="btn btn-primary p-1">Compare</a>
-                </div>
-            </div>
-            </div>
-            <div class="col-12 col-md-auto p-1">
-                <div class="card" style="width: 18rem;">
-                <img src="https://cdn.alzashop.com/ImgW.ashx?fd=f3&cd=CC021o1d" class="card-img-top" alt="..." height="280" width="250">
-                <div class="card-body">
-                <h4 class="card-title text-dark">Cooler Master Pc</h4>
-                <p class="card-text text-danger font-bold"><strike>$700</strike></p>
-                <p class="card-text text-priamry font-italic">$500</p>
-                <a href="#" class="btn btn-dark p-1">View Product</a>
-                <a href="#" class="btn btn-primary p-1">Compare</a>
-                </div>
-            </div>
-            </div>
-            <div class="col-12 col-md-auto p-1">
-                <div class="card" style="width: 18rem;">
-                <img src="https://static.bhphoto.com/images/images2000x2000/1588869980_1560599.jpg" class="card-img-top" alt="..." height="280" width="250">
-                <div class="card-body">
-                <h4 class="card-title text-dark">Razer PC </h4>
-                <p class="card-text text-danger font-bold"><strike>$700</strike></p>
-                <p class="card-text text-priamry font-italic">$500</p>
-                <a href="#" class="btn btn-dark p-1">View Product</a>
-                <a href="#" class="btn btn-primary p-1">Compare</a>
-                </div>
-            </div>
-            </div>
-            </div>
-    </div>
+    
+ 
     
        <!--footer-->
        <footer>
